@@ -7,7 +7,7 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url('MWI.jpg'); /* Replace with your image path */
+    background-image: url('MWI.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
