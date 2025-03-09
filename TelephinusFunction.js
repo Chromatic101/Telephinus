@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load Profile
     function loadProfile() {
         const profileData = {
-            name: 'Alex Pen',
+            name: 'Ashtoinne Turingan',
             email: 'akmturingan@pcu.edu.ph',
             gradeSection: 'Grade 12 E-SHILOH',
             strand: 'TVL-ICT-CP',
