@@ -78,6 +78,28 @@ document.addEventListener('DOMContentLoaded', function() {
         loadMainContent();
     });
 
+    // Log Out Functionality
+    document.querySelector('.logout').addEventListener('click', function() {
+        // Hide the main content
+        document.getElementById('main-content').style.display = 'none';
+        
+        // Show the role selection screen
+        document.getElementById('role-selection').style.display = 'block';
+        
+        // Clear any user-specific data (if needed)
+        document.getElementById('dates').innerHTML = '';
+        document.getElementById('notification-list').innerHTML = '';
+        document.getElementById('announcements-list').innerHTML = '';
+        document.getElementById('pending-activities-list').innerHTML = '';
+        document.getElementById('profile-info').innerHTML = '';
+        
+        // Reset the year and month pickers (optional)
+        document.getElementById('year-picker').value = new Date().getFullYear();
+        document.getElementById('month-picker').value = new Date().getMonth();
+        
+        alert('You have been logged out.');
+    });
+
     // Load Main Content
     function loadMainContent() {
         populateYearPicker();
@@ -182,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load Profile
     function loadProfile() {
         const profileData = {
-            name: 'Ashtoinne Turingan',
+            name: 'Alex Pen',
             email: 'akmturingan@pcu.edu.ph',
             gradeSection: 'Grade 12 E-SHILOH',
             strand: 'TVL-ICT-CP',
